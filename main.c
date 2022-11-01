@@ -1,6 +1,6 @@
 #include "Tlv.h"
 #include "Test.h"
-#define recivePort 12344
+#define recivePort 31337
 int main()
 {
     setvbuf(stdout,NULL,_IOLBF,0);
