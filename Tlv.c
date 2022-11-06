@@ -2,7 +2,7 @@
 
 void printOperation(uint32_t TLVvalue)
 {
-    if(TLVvalue==0)        {printf("The amplifier is on\n");}
+    if(TLVvalue==0)        {printf("The amplifier is off\n");}
     else if(TLVvalue==1)   {printf("The amplifier is on\n");}
     else if(TLVvalue==rx)  {printf("Reciver mode\n");}
     else if(TLVvalue==tx)  {printf("Transmitter mode\n");}
