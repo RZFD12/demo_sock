@@ -34,6 +34,7 @@ int main()
                     sendto(echoS.reciveSocket,buffer,datagrammSize,0,(struct sockaddr*)&echoS.clientAddr,sizeof(echoS.clientAddr));
                     printState(&echoS);
                 }
+		    free(buffer);
              }
         }
     }

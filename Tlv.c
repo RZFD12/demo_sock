@@ -146,4 +146,5 @@ void sendDatagramm(const struct TLVProtocol * TLV, const struct Esocket *echoS, 
         memcpy(buffer,data+position,size);
         sendto(echoS->reciveSocket,buffer,size,0,(struct sockaddr*)&echoS->clientAddr,sizeof(echoS->clientAddr));
     }
+    free(buffer);
 }
